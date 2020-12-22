@@ -2,7 +2,6 @@ import Search from '../../components/search/search'
 import Detail from '../../components/item-detail/Detail'
 
 export default function Item({item, description }){
-    console.log(description)
     return (
         <div>
             <Search></Search>

@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Detail (props){
-    console.log(props)
         return(
             <section className="container">
                 <article className="detail">
