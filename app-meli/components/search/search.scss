@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+header.container{
+    display: grid;
+    background: #fff159;
+    grid-template-columns: 18% auto;
+    .logo{
+        display: grid;
+        justify-content: start;
+        align-items: center;
+    }
+    .search{
+        position: relative;
+        .search-box{
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+            border: 0 rgba(0,0,0,.2);
+            border-radius: 2px;
+            padding: 1rem;
+            width: 100%;
+            
+        }
+        .search-icon{
+            background-color: #ebebeb;
+            cursor: pointer;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+            position: absolute;
+            right: 0%;
+            top: 0;
+        }
+    }
+
+}
+
+@include responsive(md) {
+    header.container{
+        grid-template-columns: 10% auto;
+    }
+}  

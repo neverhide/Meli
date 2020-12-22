@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.card-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    background-color: #ffffff;
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        .card-img{
+            img{
+                width: 200px;
+            }
+        }
+    }
+}
