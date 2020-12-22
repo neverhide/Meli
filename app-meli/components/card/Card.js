@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link'
 
-export default function Card (props) {
+export default function Card ({items}) {
 
     return(
         <section className="card-list">
-            {props?.items?.results?.map((item) => (
+            {items?.results?.map((item) => (
                 <Link href={`items/${item.id}`} key={item.id}>
                     <article className="card">
                         <div className="card-img">

@@ -1,0 +1,25 @@
+.breadcrumb{
+    padding: 1rem;
+    color:grey;
+    .path{
+        text-transform: capitalize;
+    }
+    .list-path{
+        margin: 0;
+        padding: 0;
+        .list-item-path{
+            display: inline;
+            padding: 0 0.4rem;
+            &::after{
+                content:'|';
+                margin-left: 0.4rem;
+            }
+        }
+    }
+}
+
+@include responsive(md) {
+    .breadcrumb{
+        padding: 1rem 8rem;
+    }
+}  
