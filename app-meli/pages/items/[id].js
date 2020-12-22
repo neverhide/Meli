@@ -3,7 +3,6 @@ import Detail from '../../components/item-detail/Detail'
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
 
 export default function Item({item, description, breadcrumb }){
-    console.log(item, breadcrumb)
     return (
         <div>
             <Search></Search>
